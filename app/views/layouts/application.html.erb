@@ -2,14 +2,32 @@
 <html>
   <head>
     <title>Budgetic</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans:wght@200;300;700&display=swap');
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= current_page?(new_user_session_path) || current_page?(new_user_registration_path) ? 'bg-[#3778c2]' : 'bg-[#eeeeee]'%>">
+
+  <%= render "partials/nav_bar" %>
+
+    <% if notice %>
+      <p class="notice text-white bg-[#5fb523] p-4 text-center w-full"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert text-white bg-red-400 p-4 text-center w-full"><%= alert %></p>
+    <% end %>
+
+  <main class="px-[10%] flex flex-col items-center">
+      <%= yield %>
+  </main>
   </body>
 </html>
