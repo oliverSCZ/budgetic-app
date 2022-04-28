@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_25_222747) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_26_234711) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -30,12 +30,22 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_25_222747) do
     t.index ["expense_id"], name: "index_categories_expenses_on_expense_id"
   end
 
+  create_table "expense_categories", force: :cascade do |t|
+    t.bigint "category_id", null: false
+    t.bigint "expense_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_expense_categories_on_category_id"
+    t.index ["expense_id"], name: "index_expense_categories_on_expense_id"
+  end
+
   create_table "expenses", force: :cascade do |t|
     t.string "name"
     t.float "amount"
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "categories"
     t.index ["user_id"], name: "index_expenses_on_user_id"
   end
 
@@ -53,5 +63,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_25_222747) do
   end
 
   add_foreign_key "categories", "users"
+  add_foreign_key "expense_categories", "categories"
+  add_foreign_key "expense_categories", "expenses"
   add_foreign_key "expenses", "users"
 end
