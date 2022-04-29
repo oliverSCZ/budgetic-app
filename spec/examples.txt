@@ -1,0 +1,30 @@
+example_id                                   | status | run_time        |
+-------------------------------------------- | ------ | --------------- |
+./spec/models/category_spec.rb[1:1]          | passed | 0.00174 seconds |
+./spec/models/category_spec.rb[1:2]          | passed | 0.00632 seconds |
+./spec/models/expense_spec.rb[1:1]           | passed | 0.00096 seconds |
+./spec/models/expense_spec.rb[1:2]           | passed | 0.00065 seconds |
+./spec/models/user_spec.rb[1:1]              | passed | 0.00562 seconds |
+./spec/models/user_spec.rb[1:2]              | passed | 0.00713 seconds |
+./spec/models/user_spec.rb[1:3]              | passed | 0.00693 seconds |
+./spec/views/categories_index_spec.rb[1:1:1] | passed | 0.04633 seconds |
+./spec/views/categories_index_spec.rb[1:1:2] | passed | 0.04468 seconds |
+./spec/views/categories_index_spec.rb[1:1:3] | passed | 0.0427 seconds  |
+./spec/views/categories_index_spec.rb[1:1:4] | passed | 0.0715 seconds  |
+./spec/views/expenses_index_spec.rb[1:1:1]   | passed | 0.04806 seconds |
+./spec/views/expenses_index_spec.rb[1:1:2]   | passed | 0.06042 seconds |
+./spec/views/expenses_index_spec.rb[1:1:3]   | passed | 0.10382 seconds |
+./spec/views/expenses_index_spec.rb[1:1:4]   | passed | 0.0482 seconds  |
+./spec/views/expenses_index_spec.rb[1:1:5]   | passed | 0.05168 seconds |
+./spec/views/login_spec.rb[1:1:1]            | passed | 0.2984 seconds  |
+./spec/views/login_spec.rb[1:1:2]            | passed | 0.02118 seconds |
+./spec/views/login_spec.rb[1:1:3:1]          | passed | 0.03426 seconds |
+./spec/views/login_spec.rb[1:1:3:2]          | passed | 0.02993 seconds |
+./spec/views/new_category_spec.rb[1:1:1]     | passed | 0.03392 seconds |
+./spec/views/new_category_spec.rb[1:1:2]     | passed | 0.03791 seconds |
+./spec/views/new_category_spec.rb[1:1:3]     | passed | 0.04173 seconds |
+./spec/views/new_category_spec.rb[1:1:4]     | passed | 0.03045 seconds |
+./spec/views/new_expense_spec.rb[1:1:1]      | passed | 0.03655 seconds |
+./spec/views/new_expense_spec.rb[1:1:2]      | passed | 0.04298 seconds |
+./spec/views/new_expense_spec.rb[1:1:3]      | passed | 0.0556 seconds  |
+./spec/views/new_expense_spec.rb[1:1:4]      | passed | 0.04113 seconds |
