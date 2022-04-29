@@ -3,16 +3,18 @@
 <div class="flex justify-between text-lg">
   <p>
     <%= expense.name %>
+
   </p>
 
   <p>
     $<%= expense.amount %>
   </p>
+   <p>
+    
+  </p>
 </div>
     <p class="text-sm">
-      Category: <% expense.categories.each do |category| %>
-        <%=category.name%>
-      <% end %>
+      <%= expense.created_at.strftime("%d %B %Y")%>
     </p>
 </div>
 <% end %>

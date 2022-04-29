@@ -23,13 +23,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_26_234711) do
     t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
-  create_table "categories_expenses", id: false, force: :cascade do |t|
-    t.bigint "category_id", null: false
-    t.bigint "expense_id", null: false
-    t.index ["category_id"], name: "index_categories_expenses_on_category_id"
-    t.index ["expense_id"], name: "index_categories_expenses_on_expense_id"
-  end
-
   create_table "expense_categories", force: :cascade do |t|
     t.bigint "category_id", null: false
     t.bigint "expense_id", null: false

@@ -25,6 +25,7 @@ class ExpensesController < ApplicationController
   def new
     @expense = Expense.new
     @param = params['format']
+    @categories = Category.all 
   end
 
   # GET /expenses/1/edit
@@ -33,10 +34,12 @@ class ExpensesController < ApplicationController
   # POST /expenses or /expenses.json
   def create
     @expense = current_user.expenses.new(expense_params)
+    # @category.expenses.create({ name: params[:name], amount: params[:amount], user: current_user })
+
 
     respond_to do |format|
       if @expense.save
-        ExpenseCategory.create(category_id: params[:category_id], expense_id: @expense.id)
+        ExpenseCategory.create(category_id: params[:category], expense_id: @expense.id)
         format.html do
           redirect_to category_expenses_path(params[:category_id]), notice: 'Expense was successfully created.'
         end
