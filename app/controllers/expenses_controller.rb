@@ -25,7 +25,7 @@ class ExpensesController < ApplicationController
   def new
     @expense = Expense.new
     @param = params['format']
-    @categories = Category.all 
+    @categories = Category.all
   end
 
   # GET /expenses/1/edit
@@ -35,7 +35,6 @@ class ExpensesController < ApplicationController
   def create
     @expense = current_user.expenses.new(expense_params)
     # @category.expenses.create({ name: params[:name], amount: params[:amount], user: current_user })
-
 
     respond_to do |format|
       if @expense.save

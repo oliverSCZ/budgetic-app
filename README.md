@@ -1,122 +1,72 @@
-# My Budgetic App
+# Budgetic
 
-This mobile app allows the user to manage their personal finances by keeping track of their expenses.
+A simple application developed in Ruby on Rails that helps you keep track of your expenses.
 
+## Built With
 
+- Ruby
+- Rails
+- PostgresSQL
+- Tailwind CSS
 
-<br>
+## Getting Started
 
-## 🪛 Built with
-Ruby on Rails
+To get a local copy up and running follow the steps below.
 
-<br>
+### Prerequisites
+- Ruby
+- Rails
 
+### Setup
+- $ `git clone`  https://github.com/oliverSCZ/budgetic-app.git
+- `cd`budgetic-app
+- Run `bundle install`
+- Run `rails db:create` 
+- Run `rails db:migrate` 
+- Run `rails s` 
+Note: In case this doesn't work, try `rails db:drop` and do the steps all over again
 
+### Install
+- Run `bundle install` to install all the necessary dependencies
+  
+### Tests
 
-<h3>Installing Rails</h3>
+- Open a terminal and cd into the project folder.
+- Run `rspec ./spec`
 
-Before you install Rails, you should check to make sure that your system has the proper prerequisites installed. These include:
+### Usage
+- Run `rails s` to expose a local webserver
 
-    Ruby
-    SQLite3
-    Node.js
-    Yarn
+### Demo
 
-<br>
+- [Link Demo](https://git.heroku.com/budgetic-app.git)
 
-<h3>Installing Ruby</h3>
+## Authors
 
-Open up a command line prompt. On macOS open Terminal.app; on Windows choose "Run" from your Start menu and type cmd.exe. Any commands prefaced with a dollar sign $ should be run in the command line. Verify that you have a current version of Ruby installed:
-
-`$ ruby --version
-ruby 2.7.0`
-
-Rails requires Ruby version 2.7.0 or later. It is preferred to use latest Ruby version. If the version number returned is less than that number (such as 2.3.7, or 1.8.7), you'll need to install a fresh copy of Ruby.
-
-To install Rails on Windows, you'll first need to install [Ruby Installer](https://rubyinstaller.org/).
-
-<br>
-
-<h3>Installing SQLite3</h3>
-
-You will also need an installation of the SQLite3 database.
-
-Verify that it is correctly installed and in your load PATH:
-
-`$ sqlite3 --version`
-
-The program should report its version.
-
-<br>
-<h3>Installing Node.js and Yarn</h3>
-
-Finally, you'll need Node.js and Yarn installed to manage your application's JavaScript.
-
-Find the installation instructions at the [Node.js website](https://nodejs.org/en/download/) and verify it's installed correctly with the following command:
-
-`$ node --version`
-
-The version of your Node.js runtime should be printed out. Make sure it's greater than 8.16.0.
-
-To install Yarn, follow the installation instructions at the [Yarn website](https://classic.yarnpkg.com/en/docs/install).
-
-Running this command should print out Yarn version:
-
-`$ yarn --version`
-
-If it says something like "1.22.0", Yarn has been installed correctly.
-
-<br>
-<h3>Installing Rails</h3>
-
-To install Rails, use the gem install command provided by RubyGems:
-
-`$ gem install rails`
-
-<br>
-<h3>Running the app</h3>
-To run the app in your browser, simply run the following command in your terminal:
-
-`$ rails s`
-
-Then, open https://localhost:3000 in your browser to view the app.
-
-<br>
-
-### Testing
-
-To run the tests run `bundle exec rspec` in your console. Then, run `rspec spec/folder_name/file_name_spec.rb`.
-
-<br>
-
-## ✏️ Authors
-
-👤 **Oliver Coimbra**
+👤 ** ✏️  Oliver Coimbra**
 
 - GitHub: [@oliverSCZ](https://github.com/oliverSCZ)
 - Twitter: [@olivercoimbra](https://twitter.com/olivercoimbra)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/olivercoimbra)
 
-<br>
+## License and Attributions
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)
+
+## Acknowledgements
+
+Original design idea by [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/oliverscz/blog-app/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-<br>
-
-## Acknowledgments
-
-Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
-
-<br>
-
 ## 📝 License
 
-This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
+This project is [MIT](./MIT.md) licensed.
