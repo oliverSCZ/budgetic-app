@@ -39,7 +39,7 @@ Note: In case this doesn't work, try `rails db:drop` and do the steps all over a
 
 ### Demo
 
-- [Link Demo]([https://git.heroku.com/budgetic-app.git](https://boiling-falls-90821.herokuapp.com/users/sign_in))
+- [Link Demo]([https://boiling-falls-90821.herokuapp.com/users/sign_in])
 
 ## Authors
 
